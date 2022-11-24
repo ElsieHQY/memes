@@ -2,8 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-B U T
-I had done some interesting!
+B U T <br>
+I had done some interesting! <br>
 Let's get some popular memes to make your day :)
 
 ### Available Scripts
