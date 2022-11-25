@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import logo from "./logo.svg";
 import "./App.css";
 import Memes from "./memes";
 
@@ -9,8 +8,10 @@ const randomNum = Math.floor(Math.random() * Memes.DataLength);
 
 const App = () => {
   const [randomNumber, setRandomNumber] = useState(randomNum);
-  console.log("re-render check");
-  useEffect(() => {}, [randomNumber]);
+
+  useEffect(() => {
+    console.log("random number : ", randomNum);
+  }, [randomNumber]);
 
   return (
     <div className="App">
@@ -38,27 +39,3 @@ const App = () => {
   );
 };
 export default App;
-
-//////////////////////////////////////////////
-// original
-// const App = function () {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// };
-// export default App;
